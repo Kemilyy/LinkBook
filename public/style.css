@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: rgb(74, 13, 131);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    gap: 20px;
+    position: relative;
+}
+
+.texto_entrar {
+    font-weight: bold 10px;
+    font-size: 17px;
+}
+
+.busca {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.busca_input {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+}
+
+.busca_lupa {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.lupa {
+    width: 20px;
+    height: 20px;
+}
+
+.usuario_entrar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*cria espaço fixo entre as linhas*/
+    cursor: pointer;
+}
+
+/*.not{
+    background: none;
+    cursor: pointer;
+    border: none;
+}*/
+
+nav {
+    background-color: rgb(74, 13, 131);
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    border-top: 1px solid;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.hamburguer {
+    background: none;
+    border: 0;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px 2%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .generos label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+} */
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* .filtros {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+    min-height: 100vh;
+}
+
+.grupo_filtro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo_filtro h4 {
+    margin-bottom: 10px;
+}
+
+.filtros label {
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+.filtros h4 {
+    font-size: 25px;
+}
+
+.generos {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    object-fit: contain;
+    background-color: rgb(74, 13, 131, 0.5);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.check {
+    accent-color: rgb(74, 13, 131);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+} */
+
+/* .titulo_filtro {
+    margin-bottom: -10px;
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+} */
+
+.livros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.card_livro {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    background-color: rgba(194, 191, 196, 0.5);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    gap: 0;
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    border-color: rgb(74, 13, 131);
+}
+
+.informações p {
+    font-size: 13px;
+}
+
+.livros img {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    margin-top: 13px;
+}
+
+.card_livro h4 {
+    font-size: 15px;
+    margin: 15px 5px;
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.card_livro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(74, 13, 131);
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+
+.foot {
+    color: white;
+    align-items: center;
+}
+
+/*@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+    .filtros {
+        display: none !important;
+    }
+
+    main {
+        display: block; 
+        padding: 10px;
+    }
+
+    .busca_input{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .card_livro {
+        width: 180px; 
+        margin: 5px;
+    }
+
+    .livros{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .links li {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .busca{
+        width: 150px;
+    }
+
+    .logo img{
+        height: 25px;
+    }
+}*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: visible;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+#detalhe-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background-color: rgb(74, 13, 131);;
+}

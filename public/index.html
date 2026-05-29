@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkBook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid align-items-center">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-4 col-md-auto">
+                <div class="logo">
+                    <span class="icone_logo">
+                        <img src="../public/images/icones/logo.png" alt="Logo">
+                    </span>
+                </div>
+
+                <form class="busca col-12">
+                    <input type="text" placeholder="O que você está procurando?" class="busca_input">
+                    <button type="submit" class="busca_lupa">
+                        <img src="../public/images/icones/lupa.png" alt="lupa" class="lupa">
+                    </button>
+                </form>
+                <!--<div class="not">
+            <button type=""submit>
+                <img src="../public/images/notificação.png" alt="notificações">
+            </button>
+            </div>-->
+                <div class="usuario_entrar">
+                    <span class="icone_boneco">
+                        <img src="../public/images/icones/user (1).png" alt="usuário">
+                    </span>
+                    <span class="texto_entrar">Entrar</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="">
+                <button class="hamburguer">
+                    <img src="../public/images/icones/hamburguer.png" alt="menu hamburguer">
+                </button>
+                <ul class="links white">
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Leituras Futuras</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Sugestões</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Livros Avaliados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <section id="lista-editoras" class="livros col-12 d-flex flex-wrap justify-content-center">
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="foot">Descubra mais:</a>
+    </footer>
+
+    <!-- <main class="container-fluid">
+        <section id="lista-editoras" class="livros col-md-12 row g-4 justify-content-center"></section>
+        <div class="row">
+            <aside class="col-md-3 filtros d-none d-md-block">
+                <h2 class="titulo_filtro">Filtros</h2>
+
+                <div class="grupo_filtro">
+                    <div class="generos">
+                        <h4>Gênero:</h4>
+                        <label><input type="checkbox" class="check"> Romance</label>
+                        <label><input type="checkbox" class="check"> Terror</label>
+                        <label><input type="checkbox" class="check"> Ficção Científica</label>
+                        <label><input type="checkbox" class="check"> Suspense</label>
+                        <label><input type="checkbox" class="check"> Infanto Juvenil</label>
+                        <label><input type="checkbox" class="check"> Fantasia</label>
+                    </div>
+
+                    <div class="generos">
+                        <h4>Autor:</h4>
+                        <label><input type="checkbox" class="check"> Collen Hoover</label>
+                        <label><input type="checkbox" class="check"> Ali Hazelwood</label>
+                        <label><input type="checkbox" class="check"> Kiera Cass</label>
+                        <label><input type="checkbox" class="check"> Agatha Christie</label>
+                        <label><input type="checkbox" class="check"> Rebeca Yarros</label>
+                        <label><input type="checkbox" class="check"> Jenny Han</label>
+                    </div>
+
+                    <div class="generos">
+                        <h4>Editora:</h4>
+                        <label><input type="checkbox" class="check"> Intrínseca</label>
+                        <label><input type="checkbox" class="check"> Alt</label>
+                        <label><input type="checkbox" class="check"> Galera Records</label>
+                        <label><input type="checkbox" class="check"> Seguinte</label>
+                        <label><input type="checkbox" class="check"> Arqueiro</label>
+                    </div>
+                </div>
+            </aside> 
+
+            <section class="livros col-md-10 row g-4 ms-4">
+                <article class="card_livro col-lg-3 col-md-4 col-sm-6">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoraalt.png" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Alt</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoraarqueiro.png" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Arqueiro</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoragalera.jpeg" alt="">
+                    </div>
+                    <div class="informações">
+                        <h4>Galera</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoraglobolivros.png" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Globo Livros</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoraintrinseca.png" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Intrinseca</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/editoras/editoraseguinte.png" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Seguinte</h4>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/a seleção.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>A Seleção</h4>
+                        <p>Kiera Crass</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/apostando no amor.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Apostando no amor</h4>
+                        <p>Lynn Painter</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros//e nao sobrou nenhum.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>E Não Sobrou Nenhum</h4>
+                        <p>Agatha Christie</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/jogos de heranca.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Jogos de Herança</h4>
+                        <p>Jennifer Barnes</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/morte no nilo.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Morte no Nilo</h4>
+                        <p>Agatha Christie</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/o herdeiro perdido.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>O Herdeiro Perdido</h4>
+                        <p>Jennifer Barnes</p>
+                    </div>
+                </article>
+
+                <article class="card_livro col-lg-2 col-md-3 col-sm-4">
+                    <div class="capa">
+                        <img src="../public/images/livros/um de nós é o próximo.jpg" alt="capa">
+                    </div>
+                    <div class="informações">
+                        <h4>Um de Nós é o Próximo</h4>
+                        <p>Karen M. McManus</p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="#" class="foot">Descubra mais:</a>
+    </footer> -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

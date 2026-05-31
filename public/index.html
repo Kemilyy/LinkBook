@@ -10,27 +10,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="container-fluid align-items-center">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-4 col-md-auto">
+<body class="principal">
+    <header class="container-fluid">
+        <div class="row align-items-center w-100 flex-nowrap gap-3 px-3">
+
+            <div class="col-auto">
                 <div class="logo">
                     <span class="icone_logo">
                         <img src="../public/images/icones/logo.png" alt="Logo">
                     </span>
                 </div>
+            </div>
 
-                <form class="busca col-12">
+            <div class="col-6 mx-auto">
+                <form class="busca">
                     <input type="text" placeholder="O que você está procurando?" class="busca_input">
                     <button type="submit" class="busca_lupa">
                         <img src="../public/images/icones/lupa.png" alt="lupa" class="lupa">
                     </button>
                 </form>
-                <!--<div class="not">
+            </div>
+
+            <!--<div class="not">
             <button type=""submit>
                 <img src="../public/images/notificação.png" alt="notificações">
             </button>
             </div>-->
+            <div class="col-auto ms-auto">
                 <div class="usuario_entrar">
                     <span class="icone_boneco">
                         <img src="../public/images/icones/user (1).png" alt="usuário">
@@ -38,11 +44,12 @@
                     <span class="texto_entrar">Entrar</span>
                 </div>
             </div>
+
         </div>
     </header>
 
-    <nav class="container-fluid">
-        <div class="row">
+    <nav class="container-fluid justify-content-between">
+        <div class="row w-100 justify-content-center">
             <div class="">
                 <button class="hamburguer">
                     <img src="../public/images/icones/hamburguer.png" alt="menu hamburguer">

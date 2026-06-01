@@ -282,6 +282,48 @@ const dados = {
   ]
 };
 
+function filtrarEditoras() {
+    const busca = document.querySelector('.busca_input');
+    
+    if (!busca) return;
+
+    busca.addEventListener('input', () => {
+        const termo = busca.value.toLowerCase();
+        const cards = document.querySelectorAll('.card_livro');
+
+        cards.forEach(card => {
+            const nome = card.querySelector('h4').textContent.toLowerCase();
+            if (nome.includes(termo)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+}
+
+function filtrarLivros() {
+    const busca = document.querySelector('.busca_input');
+
+    if (!busca) return;
+
+    busca.addEventListener('input', () => {
+        const termo = busca.value.toLowerCase();
+        const cards = document.querySelectorAll('.carrossel .card_livro');
+
+        cards.forEach(card => {
+            const titulo = card.querySelector('h4').textContent.toLowerCase();
+            const autor = card.querySelector('p').textContent.toLowerCase();
+
+            if (titulo.includes(termo) || autor.includes(termo)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+}
+
 function renderizarHome(container) {
     let html = "";
     dados.editoras.forEach(ed => {
@@ -346,6 +388,7 @@ function renderizarDetalhe(container, editora, livros) {
 
     document.querySelector('.esquerda').addEventListener('click', () => moverCarrossel(-1));
     document.querySelector('.direita').addEventListener('click', () => moverCarrossel(1));
+    filtrarLivros()
 }
 
 window.onload = () => {
@@ -354,6 +397,7 @@ window.onload = () => {
 
     if (containerHome) {
         renderizarHome(containerHome);
+        filtrarEditoras();
     } else if (containerDetalhe) {
         const params = new URLSearchParams(window.location.search);
         const idEd = params.get('id');

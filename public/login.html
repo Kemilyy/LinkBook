@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="logo-topo">
+        <img src="../images/icones/logo_curta.png" alt="Logo LinkBook">
+        <span>LinkBook</span>
+    </div>
+
+    <div class="login-card">
+        <h2>Entrar na sua conta</h2>
+
+        <form id="login-form">
+            <label for="username" class="form-label">Usuário</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Digite seu usuário">
+
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Digite sua senha">
+
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+
+        <div class="divisor">Não tem uma conta?</div>
+
+        <button class="btn-novo" data-bs-toggle="modal" data-bs-target="#modalNovoUsuario">
+            Criar conta
+        </button>
+    </div>
+
+    <div class="modal fade" id="modalNovoUsuario" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Criar nova conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Usuário</label>
+                    <input type="text" id="txt_login" class="form-control" placeholder="Nome de usuário">
+
+                    <label class="form-label">Nome completo</label>
+                    <input type="text" id="txt_nome" class="form-control" placeholder="Seu nome completo">
+
+                    <label class="form-label">E-mail</label>
+                    <input type="email" id="txt_email" class="form-control" placeholder="seu@email.com">
+
+                    <label class="form-label">Senha</label>
+                    <input type="password" id="txt_senha" class="form-control" placeholder="Crie uma senha">
+
+                    <label class="form-label">Confirmar senha</label>
+                    <input type="password" id="txt_senha2" class="form-control" placeholder="Repita a senha">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" id="btn_salvar" class="btn-salvar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (loginUser(username, password)) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Usuário ou senha incorretos.');
+            }
+        });
+
+        document.getElementById('btn_salvar').addEventListener('click', function() {
+            const login  = document.getElementById('txt_login').value;
+            const nome   = document.getElementById('txt_nome').value;
+            const email  = document.getElementById('txt_email').value;
+            const senha  = document.getElementById('txt_senha').value;
+            const senha2 = document.getElementById('txt_senha2').value;
+
+            if (!login || !nome || !email || !senha) {
+                alert('Preencha todos os campos.');
+                return;
+            }
+            if (senha !== senha2) {
+                alert('As senhas não conferem.');
+                return;
+            }
+
+            addUser(nome, login, senha, email);
+            alert('Conta criada com sucesso! Faça login para continuar.');
+            bootstrap.Modal.getInstance(document.getElementById('modalNovoUsuario')).hide();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.favoritos-titulo {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+.vazio-msg {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.vazio-msg a {
+    color: white;
+    text-decoration: underline;
+}
+
+.btn-favorito {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 2px;
+    line-height: 1;
+}

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #c9a8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo-topo {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-topo img {
+    width: 48px;
+    height: 48px;
+    background-color: none;
+    background: none;
+}
+
+.logo-topo span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #4a0080;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 32px rgba(80, 0, 120, 0.2);
+}
+
+.login-card h2 {
+    text-align: center;
+    color: #3a006f;
+    font-weight: bold;
+    margin-bottom: 28px;
+    font-size: 1.4rem;
+}
+
+.form-label {
+    color: #3a006f;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1.5px solid #b084d8;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #2d004f;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+}
+
+.form-control:focus {
+    border-color: #7b2fbf;
+    box-shadow: 0 0 0 3px rgba(123, 47, 191, 0.2);
+    background-color: white;
+}
+
+.btn-entrar {
+    width: 100%;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.btn-entrar:hover {
+    background-color: #4a0080;
+}
+
+.divisor {
+    text-align: center;
+    color: #5a2080;
+    margin: 18px 0 14px;
+    font-size: 0.85rem;
+}
+
+.btn-novo {
+    width: 100%;
+    background-color: transparent;
+    color: #5a0099;
+    border: 2px solid #8a30cc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn-novo:hover {
+    background-color: #8a30cc;
+    color: white;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #6a0dad;
+    color: white;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body .form-label {
+    color: #4a0080;
+}
+
+.modal-body .form-control {
+    background-color: #f5eeff;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #c9a8e8;
+    border: none;
+    color: #3a006f;
+}
+
+.btn-salvar {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-salvar:hover {
+    background-color: #4a0080;
+}

@@ -1,0 +1,44 @@
+.graficos-titulo {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+.graficos-subtitulo {
+    text-align: center;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.grafico-card {
+    background-color: rgba(180, 140, 220, 0.35);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.grafico-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+.erro {
+    text-align: center;
+    padding: 30px;
+    color: #ffaaaa;
+}

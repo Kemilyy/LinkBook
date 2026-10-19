@@ -1,0 +1,287 @@
+/* ── Acesso negado ── */
+.acesso-negado {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.acesso-negado h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.acesso-negado p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.btn-voltar {
+    background: rgb(74, 13, 131);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.btn-voltar:hover {
+    background: rgb(98, 37, 139);
+    color: white;
+}
+
+/* ── Formulário ── */
+.form-cadastro {
+    background-color: rgba(98, 37, 139, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.form-cadastro label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: block;
+    color: white;
+}
+
+.form-cadastro input,
+.form-cadastro textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-cadastro input::placeholder,
+.form-cadastro textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-cadastro input:focus,
+.form-cadastro textarea:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form-cadastro h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* ── Botões do formulário ── */
+.botoes-form {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-cadastrar {
+    background-color: rgb(74, 13, 131);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 15px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: rgb(98, 37, 139);
+    transform: scale(1.02);
+}
+
+.btn-cancelar {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 15px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Mensagens ── */
+.msg-sucesso,
+.msg-erro {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.msg-sucesso {
+    background-color: rgba(50, 200, 100, 0.35);
+    border: 1px solid rgba(50, 200, 100, 0.5);
+}
+
+.msg-erro {
+    background-color: rgba(220, 50, 50, 0.35);
+    border: 1px solid rgba(220, 50, 50, 0.5);
+}
+
+/* ── Seção de listagem ── */
+.secao-lista {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.secao-lista h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.lista-editoras {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sem-itens {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 30px;
+}
+
+/* ── Card de editora ── */
+.card-editora {
+    background: rgba(98, 37, 139, 0.45);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    color: white;
+    transition: background 0.2s;
+}
+
+.card-editora:hover {
+    background: rgba(98, 37, 139, 0.65);
+}
+
+.card-editora img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    padding: 6px;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+}
+
+.card-info p {
+    margin: 2px 0;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.card-bio {
+    margin-top: 8px !important;
+    font-size: 12px !important;
+    opacity: 0.7 !important;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ── Botões de ação do card ── */
+.card-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-editar,
+.btn-excluir {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+    white-space: nowrap;
+}
+
+.btn-editar {
+    background: rgba(100, 160, 255, 0.25);
+    color: white;
+    border: 1px solid rgba(100, 160, 255, 0.4);
+}
+
+.btn-editar:hover {
+    background: rgba(100, 160, 255, 0.45);
+    transform: scale(1.03);
+}
+
+.btn-excluir {
+    background: rgba(220, 60, 60, 0.25);
+    color: white;
+    border: 1px solid rgba(220, 60, 60, 0.4);
+}
+
+.btn-excluir:hover {
+    background: rgba(220, 60, 60, 0.5);
+    transform: scale(1.03);
+}
+
+/* ── Link voltar ── */
+.link-voltar {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.link-voltar a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 576px) {
+    .card-editora {
+        flex-direction: column;
+    }
+
+    .card-acoes {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .btn-editar,
+    .btn-excluir {
+        flex: 1;
+        text-align: center;
+    }
+}

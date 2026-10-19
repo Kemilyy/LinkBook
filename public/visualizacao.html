@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="visualizacao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="principal">
+
+    <header class="container-fluid">
+        <div class="row align-items-center w-100 flex-nowrap gap-3 px-3">
+            <div class="col-auto">
+                <div class="logo">
+                    <span class="icone_logo">
+                        <img src="../images/icones/logo.png" alt="Logo">
+                    </span>
+                </div>
+            </div>
+            <div class="col-6 mx-auto">
+                <form class="busca">
+                    <input type="text" placeholder="O que você está procurando?" class="busca_input">
+                    <button type="submit" class="busca_lupa">
+                        <img src="../images/icones/lupa.png" alt="lupa" class="lupa">
+                    </button>
+                </form>
+            </div>
+            <div class="col-auto ms-auto">
+                <div class="usuario_entrar">
+                    <span class="icone_boneco">
+                        <img src="../images/icones/user (1).png" alt="usuário">
+                    </span>
+                    <span class="texto_entrar">Entrar</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="container-fluid justify-content-between">
+        <div class="row w-100 justify-content-center">
+            <div>
+                <button class="hamburguer">
+                    <img src="../images/icones/hamburguer.png" alt="menu hamburguer">
+                </button>
+                <ul class="links white">
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="cadastro_editoras.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link px-2"href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Leituras Futuras</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Sugestões</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Livros Avaliados</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="visualizacao.html">Dados</a></li>
+                    <li class="nav-item link-login"><a class="nav-link px-2" href="login.html">Login</a></li>
+                    <li class="nav-item link-logout"><a class="nav-link px-2" href="#" onclick="logout()">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <p class="graficos-titulo">Visualização de Dados</p>
+
+        <div id="conteudo-graficos">
+            <div class="loading">Carregando dados do servidor...</div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" class="foot">Descubra mais:</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="visualizacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

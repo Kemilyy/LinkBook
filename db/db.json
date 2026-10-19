@@ -1,0 +1,310 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador",
+      "email": "admin@linkbook.com",
+      "admin": true
+    },
+    {
+      "id": "lzge-43XLq8",
+      "login": "kemily",
+      "senha": "123456",
+      "nome": "kemy.ks",
+      "email": "kemilyeduardo240@gmail.com",
+      "admin": false
+    },
+    {
+      "id": "04798ec0-9100-461b-9fef-925c79e9d1d5",
+      "login": "kemily",
+      "senha": "04042007",
+      "nome": "kemily Eduardo",
+      "email": "kemilyeduardo240@gmail.com"
+    }
+  ],
+  "editoras": [
+    {
+      "id": "1",
+      "nome": "Alt",
+      "imagem": "../images/editoras/editoraalt.png",
+      "anoFundacao": "2019",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "Globo Livros (Grupo Globo)",
+      "generoPrincipal": "Jovem Adulto, New Adult e Cultura Pop",
+      "principaisAutores": "Alice Oseman, Lynn Painter, Chloe Gong",
+      "bio": "Selo jovem e dinâmico da Globo Livros nascido para preencher o mercado de livros que viralizam nas redes sociais e conversam de perto com a Geração Z, focando em diversidade e representatividade."
+    },
+    {
+      "id": "2",
+      "nome": "Arqueiro",
+      "imagem": "../images/editoras/editoraarqueiro.png",
+      "anoFundacao": "2011",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "Editora Sextante",
+      "generoPrincipal": "Romances (comerciais, históricos, de época) e Thrillers.",
+      "principaisAutores": "Ali Hazelwood, Julia Quinn, Harlan Coben, Nicholas Sparks, Lucinda Riley.",
+      "bio": "Criada pela família Pereira (fundadores da Sextante) para dar uma identidade própria ao catálogo de ficção. Tornou-se um dos maiores fenômenos do país ao popularizar romances de época e best-sellers internacionais de drama e suspense."
+    },
+    {
+      "id": "3",
+      "nome": "Galera",
+      "imagem": "../images/editoras/editoragalera.jpeg",
+      "anoFundacao": "2007",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "Grupo Editorial Record",
+      "generoPrincipal": "Literatura Jovem Adulto (YA), Fantasia e Romances do BookTok",
+      "principaisAutores": "Cassandra Clare, Sarah J. Maas, Colleen Hoover, Holly Black",
+      "bio": "É o braço juvenil do Grupo Record, criado especificamente para atender um público jovem que pedia por mais livros de fantasia urbana, distopias e romances contemporâneos com pautas modernas."
+    },
+    {
+      "id": "4",
+      "nome": "Globo Livros",
+      "imagem": "../images/editoras/editoraglobolivros.png",
+      "anoFundacao": "1952",
+      "sede": "São Paulo, SP",
+      "grupoEditorial": "Grupo Globo",
+      "generoPrincipal": "Biografias, Negócios, Não Ficção e Clássicos",
+      "principaisAutores": "Machado de Assis, Padre Marcelo Rossi, Laurentino Gomes",
+      "bio": "Herdeira da histórica Livraria do Globo de Porto Alegre, hoje integra o maior grupo de comunicação do país. Possui um catálogo vasto que une jornalismo investigativo e grandes nomes nacionais."
+    },
+    {
+      "id": "5",
+      "nome": "Intrínseca",
+      "imagem": "../images/editoras/editoraintrinseca.png",
+      "anoFundacao": "2003",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "Independente",
+      "generoPrincipal": "Ficção Geral, Biografias, Jovem Adulto e True Crime",
+      "principaisAutores": "Rick Riordan, John Green, Stephenie Meyer, Neil Gaiman",
+      "bio": "Fundada por Jorge Oakim com a proposta de publicar livros com forte apelo comercial e projetos gráficos impecáveis. É famosa por descobrir e emplacar grandes blockbusters literários mundiais no mercado brasileiro."
+    },
+    {
+      "id": "6",
+      "nome": "Seguinte",
+      "imagem": "../images/editoras/editoraseguinte.png",
+      "anoFundacao": "2012",
+      "sede": "São Paulo, SP",
+      "grupoEditorial": "Companhia das Letras",
+      "generoPrincipal": "Literatura Jovem Adulto, Distopias e Histórias LGBTQIAPN+",
+      "principaisAutores": "Kiera Cass, Casey McQuiston, Jenny Han, Vitor Martins",
+      "bio": "Selo jovem da Companhia das Letras que foca em narrativas envolventes, discussões sociais relevantes e entretenimento de qualidade para adolescentes, além de forte apoio a autores nacionais."
+    },
+    {
+      "id": "7",
+      "nome": "Harper Collins",
+      "imagem": "../images/editoras/harpercollins.png",
+      "anoFundacao": "2015",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "HarperCollins Publishers (Global)",
+      "generoPrincipal": "Alta Fantasia, Suspense, Negócios e Clássicos",
+      "principaisAutores": "J.R.R. Tolkien, Agatha Christie, C.S. Lewis, Karin Slaughter",
+      "bio": "Braço brasileiro de uma das maiores e mais antigas editoras do mundo. Chegou com força ao país trazendo grandes marcas literárias exclusivas e um catálogo robusto de ficção e não ficção."
+    },
+    {
+      "id": "8",
+      "nome": "Planeta",
+      "imagem": "../images/editoras/planeta.jpeg",
+      "anoFundacao": "2003",
+      "sede": "São Paulo, SP",
+      "grupoEditorial": "Grupo Planeta (Espanha)",
+      "generoPrincipal": "Desenvolvimento Pessoal, Autoajuda e Espiritualidade",
+      "principaisAutores": "Augusto Cury, Mauricio de Sousa, Monja Coen, Pablo Neruda",
+      "bio": "Filial brasileira do gigante conglomerado de mídia espanhol Grupo Planeta. É amplamente reconhecida por publicar grandes nomes da internet, jornalistas de destaque e livros focados em comportamento."
+    },
+    {
+      "id": "9",
+      "nome": "Rocco",
+      "imagem": "../images/editoras/rocco.jpeg",
+      "anoFundacao": "1975",
+      "sede": "Rio de Janeiro, RJ",
+      "grupoEditorial": "Independente",
+      "generoPrincipal": "Fantasia, Literatura Juvenil, Ficção Geral e Suspense",
+      "principaisAutores": "J.K. Rowling, Thalita Rebouças, Clarice Lispector, Margaret Atwood",
+      "bio": "Fundada por Paulo Rocco, a editora tornou-se um marco no mercado editorial brasileiro ao trazer com exclusividade a saga Harry Potter. Destaca-se tanto pela publicação de grandes clássicos nacionais quanto porベスト-sellers internacionais de ficção e fantasia jovem."
+    },
+    {
+      "id": "10",
+      "nome": "Suma",
+      "imagem": "../images/editoras/suma.png",
+      "anoFundacao": "2003",
+      "sede": "São Paulo, SP",
+      "grupoEditorial": "Companhia das Letras",
+      "generoPrincipal": "Terror, Fantasia, Ficção Científica e Suspense",
+      "principaisAutores": "Stephen King, George R.R. Martin, Joe Hill, CJ Tudor",
+      "bio": "Originalmente Suma de Letras, o selo foi reformulado pela Companhia das Letras para se tornar a casa oficial da literatura pop, do terror e da ficção especulativa no Brasil. É amplamente conhecida por publicar as obras completas de Stephen King com projetos gráficos primorosos."
+    }
+  ],
+  "livros": [
+    {
+      "id": "101",
+      "editoraId": 6,
+      "titulo": "A Seleção",
+      "autor": "Kiera Cass",
+      "imagem": "../images/livros/a seleção.jpg"
+    },
+    {
+      "id": "102",
+      "editoraId": 7,
+      "titulo": "Morte no Nilo",
+      "autor": "Agatha Christie",
+      "imagem": "../images/livros/morte no nilo.jpg"
+    },
+    {
+      "id": "103",
+      "editoraId": 3,
+      "titulo": "Um de Nós é o Próximo",
+      "autor": "Karen M. McManus",
+      "imagem": "../images/livros/um de nós é o próximo.jpg"
+    },
+    {
+      "id": "104",
+      "editoraId": 1,
+      "titulo": "A Aposta Final",
+      "autor": "Jennifer Lynn Barnes",
+      "imagem": "../images/livros/a aposta final.jpg"
+    },
+    {
+      "id": "105",
+      "editoraId": 2,
+      "titulo": "A Hipótese do Amor",
+      "autor": "Ali Hazewoold",
+      "imagem": "../images/livros/a hipotese do amor.webp"
+    },
+    {
+      "id": "106",
+      "editoraId": 5,
+      "titulo": "Apostando no Amor",
+      "autor": "Lynn Painter",
+      "imagem": "../images/livros/apostando no amor.jpg"
+    },
+    {
+      "id": "107",
+      "editoraId": 8,
+      "titulo": "Chama de Ferro",
+      "autor": "Rebecca Yarros",
+      "imagem": "../images/livros/chama de fero.webp"
+    },
+    {
+      "id": "108",
+      "editoraId": 4,
+      "titulo": "E Não Sobrou Nenhum",
+      "autor": "Agatha Christie",
+      "imagem": "../images/livros/e nao sobrou nenhum.jpg"
+    },
+    {
+      "id": "109",
+      "editoraId": 1,
+      "titulo": "Jogos de Herança",
+      "autor": "Jennifer Lynn Barnes",
+      "imagem": "../images/livros/jogos de heranca.jpg"
+    },
+    {
+      "id": "110",
+      "editoraId": 5,
+      "titulo": "Melhor do Que Nos Filmes",
+      "autor": "Lynn Painter",
+      "imagem": "../images/livros/melhor do que nos filmes.webp"
+    },
+    {
+      "id": "111",
+      "editoraId": 1,
+      "titulo": "O Herdeiro Perdido",
+      "autor": "Jennifer Lynn Barnes",
+      "imagem": "../images/livros/o herdeiro perdido.jpg"
+    },
+    {
+      "id": "112",
+      "editoraId": 8,
+      "titulo": "Quarta Asa",
+      "autor": "Rebecca Yarros",
+      "imagem": "../images/livros/quarta_asa.webp"
+    },
+    {
+      "id": "113",
+      "editoraId": 2,
+      "titulo": "Um amor Problemático de Verão",
+      "autor": "Ali Hazewoold",
+      "imagem": "../images/livros/um amor problematico.jpg"
+    },
+    {
+      "id": "114",
+      "editoraId": 1,
+      "titulo": "Academia dos Casos Arquivados",
+      "autor": "Jennifer Lynn Barnes",
+      "imagem": "../images/livros/academiacasos.jpg"
+    },
+    {
+      "id": "115",
+      "editoraId": 1,
+      "titulo": "Divinos Rivais",
+      "autor": "Rebecca Ross",
+      "imagem": "../images/livros/divinosrivais.jpg"
+    },
+    {
+      "id": "116",
+      "editoraId": 1,
+      "titulo": "Em Rota de Colisão",
+      "autor": "Lynn Painter",
+      "imagem": "../images/livros/em rota de colisao.webp"
+    },
+    {
+      "id": "117",
+      "editoraId": 1,
+      "titulo": "Assistente do Vilão",
+      "autor": "Hannah Nicole Maehrer",
+      "imagem": "../images/livros/assistentevilao.jpg"
+    },
+    {
+      "id": "118",
+      "editoraId": 1,
+      "titulo": "Como Sobreviver à Realeza",
+      "autor": "Rachel Hawkins",
+      "imagem": "../images/livros/comosobreviverarealeza.jpg"
+    },
+    {
+      "id": "119",
+      "editoraId": 1,
+      "titulo": "Beijos e Croissants",
+      "autor": "Anne-Sophie Jouhanneau",
+      "imagem": "../images/livros/beijoscroissants.jpg"
+    },
+    {
+      "id": "120",
+      "editoraId": 1,
+      "titulo": "Promessas Cruéis",
+      "autor": "Rebecca Ross",
+      "imagem": "../images/livros/promessascrueis.jpg"
+    },
+    {
+      "id": "121",
+      "editoraId": 2,
+      "titulo": "Uma Farsa de Amor na Espanha",
+      "autor": "Elena Armas",
+      "imagem": "../images/livros/umafarcadeamornaespanha.jpg"
+    },
+    {
+      "id": "122",
+      "editoraId": 2,
+      "titulo": "Sem Coração",
+      "autor": "Marissa Meyer",
+      "imagem": "../images/livros/semcoracao.png"
+    },
+    {
+      "id": "123",
+      "editoraId": 2,
+      "titulo": "Caçador Sem Coração",
+      "autor": "Kristen Ciccarelli",
+      "imagem": "../images/livros/cacadorsemcoracao.jpg"
+    },
+    {
+      "id": "124",
+      "editoraId": 2,
+      "titulo": "Um Perfeito Cavalheiro",
+      "autor": "Julia Quinn",
+      "imagem": "../images/livros/bridgerton.jpg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -65,7 +65,10 @@ header .row {
     border: none;
     flex-grow: 1;
     outline: none;
+    color: #333;           
+    background: transparent;
 }
+
 
 .busca_lupa {
     background: none;
@@ -642,4 +645,17 @@ footer {
 
 #carouselExampleCaptions .carousel-item img:hover {
     transform: scale(1.03);
+}
+
+.btn-favorito {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 2px;
+    line-height: 1;
 }

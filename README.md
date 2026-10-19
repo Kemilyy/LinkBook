@@ -44,7 +44,7 @@ LINKBOOK - entrega final/
 ```
 
 - `db/db.json`: armazena os dados utilizados pela aplicação.
-- `LinkBook/public/`: contém as páginas HTML, os arquivos CSS, JavaScript e as imagens.
+- `public/`: contém as páginas HTML, os arquivos CSS, JavaScript e as imagens.
 - `package.json`: contém as configurações e dependências do projeto.
 
 ## 🚀 Como executar o projeto
@@ -57,7 +57,7 @@ LINKBOOK - entrega final/
 
 ### 1. Abra a pasta do projeto
 
-Abra a pasta principal `LINKBOOK - entrega final` no Visual Studio Code.
+Abra a pasta principal `LinkBook` no Visual Studio Code.
 
 ### 2. Instale as dependências
 
@@ -72,7 +72,7 @@ npm install
 No arquivo `package.json`, confira se o script `start` está configurado assim:
 
 ```json
-"start": "npx json-server --watch ./db/db.json --static ./LinkBook/public"
+"start": "npx json-server --watch ./db/db.json --static ./public"
 ```
 
 ### 4. Inicie o servidor
